@@ -9,8 +9,10 @@ public class Weapon : MonoBehaviour
     {
         RaycastHit hit;
 
-        Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, Mathf.Infinity);
+        if(Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, Mathf.Infinity)){
+            Debug.Log(hit.collider.name);
+        }
 
-        Debug.Log(hit.collider.name);
+        
     }
 }
