@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponPrefab: {fileID: 1116099362624715681, guid: a57129b0a0e78864bac8f11204b409a5, type: 3}
   Damage: 2
-  FireRate: 0.5
+  FireRate: 0.3
   HitVFXPrefab: {fileID: 8547801178251575457, guid: f9837adefba73df4ea773171ba7617d4, type: 3}
   IsAutomatic: 0
   CanZoom: 0

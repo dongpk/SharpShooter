@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4343473705245256267}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7750701976626682420}
   - component: {fileID: 2538915239265915356}
-  m_Layer: 3
+  - component: {fileID: -862707606422272377}
+  m_Layer: 7
   m_Name: Sniper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,8 +59,8 @@ Transform:
   m_GameObject: {fileID: 6257119956440526866}
   serializedVersion: 2
   m_LocalRotation: {x: -0.040105686, y: 0, z: 0, w: 0.99919546}
-  m_LocalPosition: {x: -0.022, y: 0.016, z: 0.005}
-  m_LocalScale: {x: 0.82322, y: 0.82322, z: 0.82322}
+  m_LocalPosition: {x: -0.022, y: 0.007, z: -0.109}
+  m_LocalScale: {x: 0.70098007, y: 0.70098007, z: 0.70098007}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4343473705245256267}
@@ -82,6 +83,66 @@ MonoBehaviour:
   interactionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &-862707606422272377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6257119956440526866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd438dd108a0f284aa931a2da434f1d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ImpulseDefinition:
+    m_ImpulseChannel: 1
+    m_ImpulseShape: 2
+    m_CustomImpulseShape:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ImpulseDuration: 0.2
+    m_ImpulseType: 0
+    m_DissipationRate: 0.25
+    m_RawSignal: {fileID: 0}
+    m_AmplitudeGain: 1
+    m_FrequencyGain: 1
+    m_RepeatMode: 0
+    m_Randomize: 1
+    m_TimeEnvelope:
+      m_AttackShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_DecayShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_AttackTime: 0
+      m_SustainTime: 0.2
+      m_DecayTime: 0.7
+      m_ScaleWithImpact: 1
+      m_HoldForever: 0
+    m_ImpactRadius: 100
+    m_DirectionMode: 0
+    m_DissipationMode: 2
+    m_DissipationDistance: 100
+    m_PropagationSpeed: 343
+  m_DefaultVelocity: {x: 0, y: -0.5, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_IgnoreTag: 
+  m_UseImpactDirection: 0
+  m_ScaleImpactWithMass: 0
+  m_ScaleImpactWithSpeed: 0
 --- !u!1001 &7056875848023595674
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -134,6 +195,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sniper_01_Blue
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 860f35edef6dcfe40b58b14593dfeafb, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -155,6 +220,10 @@ PrefabInstance:
     - target: {fileID: 100748, guid: cd4d7020429cde74db076ffa72495419, type: 3}
       propertyPath: m_Name
       value: FX_Fireworks_Green_Small (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100748, guid: cd4d7020429cde74db076ffa72495419, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 459750, guid: cd4d7020429cde74db076ffa72495419, type: 3}
       propertyPath: m_LocalScale.x
@@ -337,6 +406,10 @@ PrefabInstance:
     - target: {fileID: 1796953138866455120, guid: 99a42049849deca48b95ccd2e26b348c, type: 3}
       propertyPath: m_Name
       value: Muzzle Flash
+      objectReference: {fileID: 0}
+    - target: {fileID: 1796953138866455120, guid: 99a42049849deca48b95ccd2e26b348c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3067825723327350017, guid: 99a42049849deca48b95ccd2e26b348c, type: 3}
       propertyPath: m_LocalScale.x
