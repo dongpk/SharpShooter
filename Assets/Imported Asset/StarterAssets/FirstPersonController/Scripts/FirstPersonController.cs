@@ -121,6 +121,10 @@ namespace StarterAssets
 		{
 			CameraRotation();
 		}
+		public void ChangeRoatationSpeed(float amount)
+		{
+			RotationSpeed = amount;
+		}
 
 		private void GroundedCheck()
 		{
