@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Sniper
   m_EditorClassIdentifier: 
   weaponPrefab: {fileID: 6257119956440526866, guid: a95a06264bd6efc4b9993a423d4e173f, type: 3}
-  Damage: 8
+  Damage: 10
   FireRate: 1.2
   HitVFXPrefab: {fileID: 8547801178251575457, guid: f9837adefba73df4ea773171ba7617d4, type: 3}
   IsAutomatic: 0
   CanZoom: 1
   ZoomAmount: 7.5
-  ZoomRotationSpeed: 0.33
+  ZoomRotationSpeed: 0.44
+  MagazineSize: 8
