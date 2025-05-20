@@ -83,10 +83,10 @@ namespace StarterAssets
 			zoom = newZoomState;
 		}
 		
-		private void OnApplicationFocus(bool hasFocus)
-		{
-			SetCursorState(cursorLocked);
-		}
+		// private void OnApplicationFocus(bool hasFocus)
+		// {
+		// 	SetCursorState(cursorLocked);
+		// }
 
 		private void SetCursorState(bool newState)
 		{
