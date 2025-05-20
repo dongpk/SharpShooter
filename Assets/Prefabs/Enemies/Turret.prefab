@@ -282,7 +282,7 @@ MonoBehaviour:
   turretHead: {fileID: 60737974820238962}
   playerTargetPoint: {fileID: 0}
   projectileSpawnPoint: {fileID: 3687648707727099157}
-  fireRate: 3
+  fireRate: 4
   damage: 1
 --- !u!1 &5181420735175597007
 GameObject:

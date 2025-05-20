@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   robotPrefab: {fileID: 6128790749951517310, guid: 4e26e5a973e563f4f8a7ecb2ebbd5dfb, type: 3}
-  spawnTime: 8
+  spawnTime: 10
   spawnPoint: {fileID: 37256693582170114}
 --- !u!1001 &207815137420963330
 PrefabInstance:
