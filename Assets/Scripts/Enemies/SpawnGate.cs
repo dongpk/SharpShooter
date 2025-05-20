@@ -11,6 +11,7 @@ public class SpawnGate : MonoBehaviour
 
     void Start()
     {
+        player = FindFirstObjectByType<PlayerHealth>();
         // Start the spawn routine
         StartCoroutine(SpawnRoutine());
     }
@@ -18,7 +19,8 @@ public class SpawnGate : MonoBehaviour
 
     IEnumerator SpawnRoutine()
     {
-        while ()
+        //neu 
+        while (player)
         {
             Instantiate(robotPrefab, spawnPoint.position, transform.rotation);
             yield return new WaitForSeconds(spawnTime);
