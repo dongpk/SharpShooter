@@ -19,7 +19,7 @@ public class SpawnGate : MonoBehaviour
 
     IEnumerator SpawnRoutine()
     {
-        //neu 
+       
         while (player)
         {
             Instantiate(robotPrefab, spawnPoint.position, transform.rotation);
