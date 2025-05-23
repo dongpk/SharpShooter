@@ -17,6 +17,7 @@ public class Weapon : MonoBehaviour
     public void Shoot(WeaponSO weaponSO)
     {
         muzzleFlash.Play();
+        //TODO them play sound gun
 
         impulseSource.GenerateImpulse();
         // Perform raycast to hit target

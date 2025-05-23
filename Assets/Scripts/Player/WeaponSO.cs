@@ -15,4 +15,6 @@ public class WeaponSO : ScriptableObject
 
     public float ZoomRotationSpeed = 0.5f;
     public int MagazineSize = 10;
+
+    //TODO them cho gan sound guns
 }
