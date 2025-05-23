@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5d5b1964a43e942a78ed81275dccf402
+guid: f1a70f263be3ed9449d51d892432b143
 AudioImporter:
   externalObjects: {}
   serializedVersion: 7
@@ -21,10 +21,3 @@ AudioImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 295957
-  packageName: Industrial Sci-fi Vol.I
-  packageVersion: 1.0
-  assetPath: Assets/Industrial Sci-Fi Vol.I/MiragePort_LOOP.wav
-  uploadId: 691512
