@@ -22,8 +22,9 @@ public class SpawnGate : MonoBehaviour
        
         while (player)
         {
-            // TODO them sound SPAWN
+            
             Instantiate(robotPrefab, spawnPoint.position, transform.rotation);
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.gate);
             yield return new WaitForSeconds(spawnTime);
         }
         

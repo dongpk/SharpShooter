@@ -21,3 +21,4 @@ MonoBehaviour:
   ZoomAmount: 10
   ZoomRotationSpeed: 0.5
   MagazineSize: 12
+  shootSFX: {fileID: 8300000, guid: 82f239090ed88d54d8d732c42d164229, type: 3}

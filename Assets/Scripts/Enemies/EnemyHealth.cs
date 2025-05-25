@@ -34,7 +34,7 @@ public class EnemyHealth : MonoBehaviour
     public void SelfDestruct()
     {
         Instantiate(robotExplosionVFX, transform.position, Quaternion.identity);
-        //TODO them sound explosion vo day
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.explosion);
         Destroy(this.gameObject);
     }
 }

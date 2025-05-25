@@ -28,7 +28,7 @@ public class Projectile : MonoBehaviour
         playerHealth?.TakeDamage(damage);
 
         Instantiate(projectileHitVFXPrefab, transform.position, Quaternion.identity);
-        //TODO them sound  vo day
+        
         Destroy(this.gameObject);
     }
 }
