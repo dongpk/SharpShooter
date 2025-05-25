@@ -12,6 +12,7 @@ public class AudioManager : MonoBehaviour
    
     public AudioClip explosion;
     public AudioClip gate;
+    public AudioClip takeDamage;
    
 
     void Awake()

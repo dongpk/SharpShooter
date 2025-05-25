@@ -22,7 +22,9 @@ public class PlayerHealth : MonoBehaviour
     //ham nay se duoc goi khi playeer bi sat thuong
     public void TakeDamage(int amount)
     {
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.takeDamage);
         currentHealth -= amount;
+        
         // Debug.Log(amount+" damage taken, current health: " + currentHealth);
         AdjustShieldUI();
 

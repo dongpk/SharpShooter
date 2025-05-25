@@ -1,11 +1,13 @@
 using UnityEngine.SceneManagement;
 using UnityEngine;
 using TMPro;
+using StarterAssets;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] TMP_Text enemiesLeftText;
     [SerializeField] GameObject youWinText;
+    [SerializeField] GameObject crosshair;
     
     int enemiesLeft=0;
 
@@ -18,6 +20,9 @@ public class GameManager : MonoBehaviour
         {
             
             enemiesLeftText.gameObject.SetActive(false);
+            StarterAssetsInputs starterAssetsInputs = FindFirstObjectByType<StarterAssetsInputs>();
+            starterAssetsInputs.SetCursorState(false);
+            crosshair.SetActive(false);
             youWinText.SetActive(true);
         }
 
