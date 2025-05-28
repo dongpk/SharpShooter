@@ -11,12 +11,15 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] Transform weaponCamera;
     [SerializeField] Image[] shieldBar;
     [SerializeField] GameObject gameOverContainer;
+    [SerializeField] TakeDamageEffect takeDamageEffect;
     int currentHealth;
     int gameoverVirualCameraPriority = 20;
+
     void Awake()
     {
         currentHealth = startingHealth;
         AdjustShieldUI();
+       
     }
 
     //ham nay se duoc goi khi playeer bi sat thuong
@@ -28,6 +31,10 @@ public class PlayerHealth : MonoBehaviour
         // Debug.Log(amount+" damage taken, current health: " + currentHealth);
         AdjustShieldUI();
 
+        if (takeDamageEffect != null)
+        {
+            takeDamageEffect.Play();
+        }
         //xoa player neu player bi tieu diet
         if (currentHealth <= 0)
         {
