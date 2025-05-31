@@ -33,7 +33,7 @@ public class AudioManager : MonoBehaviour
         if (!clip) return;
         musicSource.clip = clip;
         musicSource.loop = loop;
-        musicSource.ignoreListenerPause = true;   // B3 – play khi Game paused
+        musicSource.ignoreListenerPause = true;   
         musicSource.Play();
     }
 
