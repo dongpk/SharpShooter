@@ -19,14 +19,21 @@ public class Turret : MonoBehaviour
         StartCoroutine(FireRoutine());
     }
 
+    /// <summary>
+    /// khởi tạo vòng lặp để bắn projectile về phía player
+    /// cứ sau fireRate giây sẽ bắn một projectile về phía player
+    /// </summary>
+    /// <returns></returns>
     IEnumerator FireRoutine()
     {
+        // đảm bảo rằng player còn sống
         while (player)
         {
-
             // Fire the projectile
             yield return new WaitForSeconds(fireRate);
-            Projectile newProjectile = Instantiate(projectilePrefab, projectileSpawnPoint.position, Quaternion.identity).GetComponent<Projectile>();
+            Projectile newProjectile = Instantiate(projectilePrefab, projectileSpawnPoint.position,
+                                                 Quaternion.identity).GetComponent<Projectile>();
+            //hướng bay của projectile sẽ hướng về player
             newProjectile.transform.LookAt(playerTargetPoint);
             newProjectile.Init(damage);
         }   
@@ -34,6 +41,7 @@ public class Turret : MonoBehaviour
 
     void Update()
     {
+        //xoay đầu của turret về phía player
         turretHead.LookAt(playerTargetPoint.position);
     }
 }

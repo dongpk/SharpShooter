@@ -12,13 +12,17 @@ public class GameManager : MonoBehaviour
     int enemiesLeft=0;
 
     const string ENEMIES_LEFT_TEXT = "Enemies Left: ";
+    /// <summary>
+    /// Cập nhật số lượng kẻ thù còn lại trong game
+    /// </summary>
+    /// <param name="amount"></param>
     public void AjustEnemiesLeftText(int amount)
     {
         enemiesLeft += amount;
         enemiesLeftText.text = ENEMIES_LEFT_TEXT + enemiesLeft.ToString();
         if (enemiesLeft <= 0)
         {
-            
+
             enemiesLeftText.gameObject.SetActive(false);
             StarterAssetsInputs starterAssetsInputs = FindFirstObjectByType<StarterAssetsInputs>();
             starterAssetsInputs.SetCursorState(false);

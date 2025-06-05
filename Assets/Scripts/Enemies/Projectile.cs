@@ -12,8 +12,10 @@ public class Projectile : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
     }
+
     void Start()
     {
+        //gán hướng bay
         rb.linearVelocity = transform.forward * speed;
 
     }

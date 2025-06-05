@@ -17,12 +17,11 @@ public class AudioManager : MonoBehaviour
 
     void Awake()
     {
-       
+       // Mẫu Singleton để đảm bảo chỉ có một AudioManager tồn tại
         if (Instance != null && Instance != this) { Destroy(gameObject); return; }
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }
-
     void Start()
     {
         if (backgroundMusic) PlayMusic(backgroundMusic, true);

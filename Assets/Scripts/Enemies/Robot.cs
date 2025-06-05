@@ -12,14 +12,16 @@ public class Robot : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
     void Start()
     {
+        // tìm kiếm đối tượng FirstPersonController(player) trong scene
         player = FindFirstObjectByType<FirstPersonController>();
 
     }
-
- 
+    /// <summary>
+    /// cập nhật vị trí của player
+    /// </summary>
     void Update()
     {
         if(!player) return;
